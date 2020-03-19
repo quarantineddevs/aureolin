@@ -1,0 +1,14 @@
+Background:
+  Despite his and his army's best efforts, the evil LORD NAAKAHALAN THE USURPER was defeated at the hands of the heroic GENERAL YILOHU.
+  The general took the evil lord's talisman as a spoil of war and ruled the KINGDOM OF NAVGIARI.
+  As for Naakahalan, the general ordered him thrown into the ASMURA OCEAN; however, he survived because his talisman was no ordinary accessory.
+  Naakahalan's talisman, the later-dubbed TALSISMAN OF JUSTICE, allowed its wearer to breathe under the waves.
+  After having had it so long, the lord could take advantage of that ability even without the artifact's presence.
+  No one in the kingdom suspected the wicked lord's survivial, though, and Yilohu ruled in peace for fifty-seven years after.
+// So I think that this could serve as some cool opening exposition. Like as a title crawl from Star Wars. Except without the he survived part.
+
+Story of game:
+  The player begins in the small town of IEMAYYIN with starting equipment and a family heirloom.
+  The player explores the town, while going about their character's deaily routine of going to the library in the hopes that new books have arrived that might help identify the family heirloom.  // TODO: Figure out a way to communicate this to players.
+  No new books have arrived but there are some books that teach the player how to play the game.
+  Upon exiting the library, a herald from the general's court hands you a letter: "Congratulations, you, [character_name] have been drafted into the royal guard. Report to PRINTI PALACE in NAVGIARI CITY for placement."  // Inciting incident!
