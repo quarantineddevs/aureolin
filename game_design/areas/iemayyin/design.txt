@@ -1,0 +1,7 @@
+Iemayyin is a small to medium sized town north of Navgiari City and connected to it by Navgiari Road 1 which leaves from its south.
+The city is not surrounded by walls like many others in Navgiari because monster attacks are almost unheard of anywhere near the peaceful settlement.
+The player's house is in the southwest of the town, which is mostly divided into three sections:
+Southwest residential area:
+  There are three houses in a north-south row.
+  The player's house is the southernmost one, and its front door is just a few steps away from Navgiari Road 1.
+  // TODO: the other two houses are occupied by ppl. In the southeast is the commercial district. The northwest and northeast are occupied by the library and town hall.
