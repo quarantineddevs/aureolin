@@ -1,10 +1,13 @@
 package rendering;
 
 import java.awt.Dimension;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
-public class AFrame extends JFrame {
+public class AFrame extends JFrame implements KeyListener {
 	
 	// For reasons unknown to me
 	public static final long serialVersionUID = 378294032845375L;
@@ -24,6 +27,27 @@ public class AFrame extends JFrame {
 		super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// Sizes everything correctly
 		super.pack();
+		
+		addKeyListener(this);
 	}
+	
+	// Runs on closing the window (AKA exiting the game)
+	private void close() {
+		// Actually closing the window
+		this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+		// TODO: Add cleanup code here if needed
+	}
+	
+	// Run whenever a key is pressed
+	public void keyPressed(KeyEvent keyEvent) {
+		int key = keyEvent.getKeyCode();
+		if (key == KeyEvent.VK_ESCAPE) {
+			this.close();
+		}
+	}
+	
+	// Methods we have to implement but don't actually use
+	public void keyTyped(KeyEvent keyEvent) {}
+	public void keyReleased(KeyEvent keyEvent) {}
 
 }
