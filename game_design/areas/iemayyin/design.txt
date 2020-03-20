@@ -1,0 +1,24 @@
+Iemayyin is a small to medium sized town north of Navgiari City and connected to it by Navgiari Road 1 which leaves from its south.
+The city is not surrounded by walls like many others in Navgiari because monster attacks are almost unheard of anywhere near the peaceful settlement.
+The player's house is in the southwest of the town, which is mostly divided into three sections:
+Southwest residential area:
+  There are three houses in a north-south row.
+  The player's house is the southernmost one, and its front door is just a few steps away from Navgiari Road 1.
+  The middle house is occupied by MR. STRITI and his son THOMAS.
+    Mr. Striti when talked to says, "You're off to the library again aren't you [character_name]? I understand why you go, but it's not healthy to spend so much time on one goal. Take a break and save your progress using your diary."
+    Thomas when talked to says, "You ask the librarian every day, `Have any new books come in,' and the answer's always the same. You should listen to my dad."
+  The top house is locked with a sign on the door saying "Working at town hall. -MAYOR MOWNATIN."  // I'm thinking this will be a plot thread for later.
+Southwest commercial area:
+  There are two shops arrangen north to south like the houses opposite them.
+  The first shop sells healing items.
+  The second shop sells  // TODO: Find something for the shpo to sell. Player already has equipment and healing is sold in the other one.
+North:
+    The library and town hall are one building.
+    The library contains several books.
+        A book called 'Combat for Beginners' has tips on combat.  // TODO: Write book once combat system is finalized.
+        A book called 'Navgiari Atlas' contains a map of Navgiari.  /* TODO: Make map
+          I'm thinking opening a new window to open the map jpg or png (whichever it ends up being) would be best. */
+        // TODO: More books.
+    The town hall contains a secretary desk at the enterance and a door to the mayor's office on the opposite side of the room.
+        The secretary blocks access to the office for now.  // Plot thread for later again.
+  // TODO: the other two houses are occupied by ppl. In the southeast is the commercial district. The northwest and northeast are occupied by the library and town hall.
