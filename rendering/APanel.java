@@ -10,7 +10,7 @@ public class APanel extends JPanel {
 	// Add this for Java knows what reason
 	private static final long serialVersionUID = -23721312574526L;
 	
-	private Color bgColor;
+	Color bgColor;
 	
 	// repaint calls this with the appropriate Graphics object.
 	@Override
