@@ -1,5 +1,6 @@
 package rendering;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -17,6 +18,9 @@ public class AFrame extends JFrame implements KeyListener {
 	
 	private APanel panel;
 	
+	// The state of the window
+	private String state;
+	
 	// Constructor (like __init__ in Python, roughly equal to C++)
 	public AFrame() {
 		// Set title to "Return from Asmura"
@@ -28,11 +32,12 @@ public class AFrame extends JFrame implements KeyListener {
 		// Make the program exit when the window closes
 		super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// Sizes everything correctly
-		super.pack();
-		
-		addKeyListener(this);
-		
+		super.pack();		
+		addKeyListener(this);	
 		this.panel = new APanel();
+		// For menu stuff
+		this.state = "menu";
+		this.panel.bgColor = Color.BLACK;
 	}
 	
 	@Override
