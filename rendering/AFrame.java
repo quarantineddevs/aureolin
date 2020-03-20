@@ -15,6 +15,8 @@ public class AFrame extends JFrame implements KeyListener {
 	// The size of the window
 	public static Dimension windowSize = new Dimension(800, 600);
 	
+	private APanel panel;
+	
 	// Constructor (like __init__ in Python, roughly equal to C++)
 	public AFrame() {
 		// Set title to "Return from Asmura"
@@ -29,6 +31,8 @@ public class AFrame extends JFrame implements KeyListener {
 		super.pack();
 		
 		addKeyListener(this);
+		
+		this.panel = new APanel();
 	}
 	
 	// Runs on closing the window (AKA exiting the game)
