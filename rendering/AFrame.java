@@ -35,9 +35,9 @@ public class AFrame extends JFrame implements KeyListener {
 		super.pack();		
 		addKeyListener(this);	
 		this.panel = new APanel();
+		this.add(this.panel);
 		// For menu stuff
 		this.state = "menu";
-		this.panel.bgColor = Color.BLACK;
 	}
 	
 	@Override
