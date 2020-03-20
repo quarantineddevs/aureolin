@@ -12,10 +12,16 @@ public class APanel extends JPanel {
 	
 	Color bgColor;
 	
+	public APanel() {
+		super();
+		// For menu
+		this.bgColor = Color.BLACK;
+	}
+	
 	// repaint calls this with the appropriate Graphics object.
 	@Override
 	public void paintComponent(Graphics g) {
-		// Draw over the entire screen in white.
+		// Draw over the entire screen in the background color.
 		g.setColor(bgColor);
 		g.fillRect(0, 0, 800, 600);
 	}
