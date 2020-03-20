@@ -35,6 +35,11 @@ public class AFrame extends JFrame implements KeyListener {
 		this.panel = new APanel();
 	}
 	
+	@Override
+	public void repaint() {
+		this.panel.repaint();
+	}
+	
 	// Runs on closing the window (AKA exiting the game)
 	private void close() {
 		// Actually closing the window
