@@ -57,6 +57,22 @@ public class AFrame extends JFrame implements KeyListener {
 		int key = keyEvent.getKeyCode();
 		if (key == KeyEvent.VK_ESCAPE) {
 			this.close();
+		} else if (key == KeyEvent.VK_ENTER) {
+			// Enter starts game (changes background to white if in menu)
+			if (this.state == "menu") {
+				// TODO: Add functions for doing these together
+				this.state = "main";
+				this.panel.bgColor = Color.WHITE;
+			}
+		} else if (key == KeyEvent.VK_Q) {
+			// q toggles between escaped menu and main game
+			if (this.state == "main") {
+				this.state = "escaped";
+				this.panel.bgColor = Color.GRAY;
+			} else if (this.state == "escaped") {
+				this.state = "main";
+				this.panel.bgColor = Color.WHITE;
+			}
 		}
 	}
 	
