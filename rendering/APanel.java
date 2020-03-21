@@ -30,6 +30,10 @@ public class APanel extends JPanel {
 		// Draw over the entire screen in the background color.
 		g.setColor(bgColor);
 		g.fillRect(0, 0, 800, 600);
+		// Render every Renderable object
+		for (Renderable object : objects) {
+			object.render(g);
+		}
 	}
 
 }
