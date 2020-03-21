@@ -1,5 +1,6 @@
 package rendering;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -15,6 +16,11 @@ public class AFrame extends JFrame implements KeyListener {
 	// The size of the window
 	public static Dimension windowSize = new Dimension(800, 600);
 	
+	private APanel panel;
+	
+	// The state of the window
+	private String state;
+	
 	// Constructor (like __init__ in Python, roughly equal to C++)
 	public AFrame() {
 		// Set title to "Return from Asmura"
@@ -26,9 +32,17 @@ public class AFrame extends JFrame implements KeyListener {
 		// Make the program exit when the window closes
 		super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// Sizes everything correctly
-		super.pack();
-		
-		addKeyListener(this);
+		super.pack();		
+		addKeyListener(this);	
+		this.panel = new APanel();
+		this.add(this.panel);
+		// For menu stuff
+		this.state = "menu";
+	}
+	
+	@Override
+	public void repaint() {
+		this.panel.repaint();
 	}
 	
 	// Runs on closing the window (AKA exiting the game)
@@ -43,6 +57,22 @@ public class AFrame extends JFrame implements KeyListener {
 		int key = keyEvent.getKeyCode();
 		if (key == KeyEvent.VK_ESCAPE) {
 			this.close();
+		} else if (key == KeyEvent.VK_ENTER) {
+			// Enter starts game (changes background to white if in menu)
+			if (this.state == "menu") {
+				// TODO: Add functions for doing these together
+				this.state = "main";
+				this.panel.bgColor = Color.WHITE;
+			}
+		} else if (key == KeyEvent.VK_Q) {
+			// q toggles between escaped menu and main game
+			if (this.state == "main") {
+				this.state = "escaped";
+				this.panel.bgColor = Color.GRAY;
+			} else if (this.state == "escaped") {
+				this.state = "main";
+				this.panel.bgColor = Color.WHITE;
+			}
 		}
 	}
 	
