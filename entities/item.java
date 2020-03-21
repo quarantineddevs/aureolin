@@ -6,6 +6,6 @@ public abstract class Item {
     abstract void useInBattle();
 
     void pick_up() {
-        player.inventory.add(this);  // This will eventually be a thing when an instance of player is made in main.
+        player.inventory.add(this);  // This  will eventually be a thing when an instance of player is made in main.
     }
 }

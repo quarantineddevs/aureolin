@@ -13,7 +13,7 @@ public abstract class Weapon extends Item {
     if(player.accuracy * r1 / enemy.fleetness >= 1 || (Math.random() * ((1 - 0.1) +1)) + 0.1 > player.accuracy * r1 / enemy.fleetness) {  // When an instance of PlayerCharacter called player and an instance of Opponent called enemy gets made this will hopefully work.
         enemy.hp -= Math.floor(plater.strength * this.attackPower * r2 / enemy.defense);
         } else {
-            // Have it say that the attack missed.
+            // Have  it say that the attack missed.
         }
     }
 }
