@@ -16,7 +16,7 @@ public class AFrame extends JFrame implements KeyListener {
 	// The size of the window
 	public static Dimension windowSize = new Dimension(800, 600);
 	
-	private APanel panel;
+	public APanel panel;
 	
 	// The state of the window
 	private String state;
