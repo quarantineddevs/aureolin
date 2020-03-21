@@ -33,6 +33,7 @@ public abstract class Renderable {
 			Rectangle rect = new Rectangle(xPos - width/2, yPos - height/2, width, height);
 			Graphics2D g2d = (Graphics2D) g.create();
 			BufferedImage textureFile = null;
+			// TODO TODO TODO PLEASE someone figure out how to change this file path to work everywhere
 			String fileName = "/users/adamhutchings/Coding/asmura/textures/" + textureName + ".png";
 			try {
 				// TODO: Change file path for different users
