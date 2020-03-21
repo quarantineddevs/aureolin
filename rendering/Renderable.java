@@ -39,7 +39,6 @@ public abstract class Renderable {
 				textureFile = ImageIO.read(new File(fileName));
 			} catch (IOException ioexception) {
 				System.out.println(ioexception.getMessage());
-				System.out.println(fileName);
 			}
 			g2d.setPaint(new TexturePaint(textureFile, rect));
 			g2d.fill(rect);
