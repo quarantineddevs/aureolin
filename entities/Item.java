@@ -5,7 +5,7 @@ public abstract class Item {
     abstract void use();
     abstract void useInBattle();
 
-    void pick_up() {
+    void pick_up(PlayerCharacter player) {
         player.inventory.add(this);  // This  will eventually be a thing when an instance of player is made in main.
     }
 }
