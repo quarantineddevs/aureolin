@@ -11,6 +11,7 @@ public abstract class Renderable {
 	
 	public Renderable(APanel panel) {
 		this.panel = panel;
+		this.panel.objects.add(this);
 	}
 	
 	// Must be overridden in subclasses.
