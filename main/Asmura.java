@@ -8,11 +8,13 @@ public class Asmura {
 	
 	private static int FRAMERATE = 30;
 	
-	public static void main(String[] args) {
+	public int time;
+	
+	public Asmura() {
 		// The time since start
-		int time = 0;
+		time = 0;
 		// Create an AFrame (window for the game)
-		AFrame frame = new AFrame();
+		AFrame frame = new AFrame(this);
 		// TEST BLUE SQUARE
 		new TestCenteredSquare(frame.panel);
 		// Repaint it forever
@@ -26,6 +28,10 @@ public class Asmura {
 			}
 			time++;
 		}
+	}
+	
+	public static void main(String[] args) {
+		new Asmura();
 	}
 
 }
