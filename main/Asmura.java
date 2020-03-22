@@ -9,6 +9,8 @@ public class Asmura {
 	private static int FRAMERATE = 30;
 	
 	public static void main(String[] args) {
+		// The time since start
+		int time = 0;
 		// Create an AFrame (window for the game)
 		AFrame frame = new AFrame();
 		// TEST BLUE SQUARE
@@ -22,6 +24,7 @@ public class Asmura {
 			} catch (InterruptedException exception) {
 				// TODO: Add error handling
 			}
+			time++;
 		}
 	}
 
