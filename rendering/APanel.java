@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
+import events.TimedEvent;
+
 public class APanel extends JPanel {
 	
 	// Add this for Java knows what reason
@@ -17,11 +19,15 @@ public class APanel extends JPanel {
 	// All objects to be rendered onto the screen.
 	ArrayList<Renderable> objects;
 	
+	// All events to be handled
+	ArrayList<TimedEvent> events;
+	
 	public APanel() {
 		super();
 		// For menu
 		this.bgColor = Color.BLACK;
 		objects = new ArrayList<>();
+		events = new ArrayList<>();
 	}
 	
 	// repaint calls this with the appropriate Graphics object.
