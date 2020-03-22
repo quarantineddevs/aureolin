@@ -11,7 +11,10 @@ Southwest residential area:
 Southwest commercial area:
   There are two shops arrangen north to south like the houses opposite them.
   The first shop sells healing items.
-  The second shop sells  // TODO: Find something for the shpo to sell. Player already has equipment and healing is sold in the other one.
+    Potion - 5g - "Heals 5HP"
+    Elixir - 7g - "Restores 2MP"
+    Smokescreen - 17g - "Allows unfailing escape from most battles"
+  The second shop sells  // TODO: Find something for the shop to sell. Player already has equipment and healing is sold in the other one.
 North:
     The library and town hall are one building.
     The library contains several books.
@@ -21,4 +24,3 @@ North:
         // TODO: More books.
     The town hall contains a secretary desk at the enterance and a door to the mayor's office on the opposite side of the room.
         The secretary blocks access to the office for now.  // Plot thread for later again.
-  // TODO: the other two houses are occupied by ppl. In the southeast is the commercial district. The northwest and northeast are occupied by the library and town hall.

@@ -12,7 +12,7 @@ Story of game:
   The player explores the town, while going about their character's daily routine of going to the library in the hopes that new books have arrived that might help identify the family heirloom.  // TODO: Figure out a way to communicate this to players.
   No new books have arrived but there are some books that teach the player how to play the game.
   Upon exiting the library, a herald from the general's court hands you a letter: "Congratulations, you, [character_name] have been drafted into the royal guard. Report to PRINTI PALACE in NAVGIARI CITY for placement."  // Inciting incident!
-  Heading south down NAVGIARI ROAD 1 /* TODO: Better name */ the player arrives in Navgiari City.
+  Heading south down NAVGIARI ROAD 1 /* TODO: Better name */ the player meets SAMANTHA ENTRAMANTRE and arrives in Navgiari City.
   The player goes to the palace where they are placed into a troop of soldiers, TROOP EIGHT, and tasked with clearing a section of the nearby NAKAI WOODS of monsters so it can be timbered.
   The player gets tutorialed and taught how to fight in the woods by COMMANDER CITRIUS (who makes an offhand remark about how there's just a little more monsters than usual </foreshadowing>) and fights their portion of the monsters.
   Upon returning, General Yilohu congratulates troop eight and says that they have one more assignment before their draft period ends: go to the coastal hamlet of QUENT to investigate a mysterious light coming from the Asmura Ocean at night.

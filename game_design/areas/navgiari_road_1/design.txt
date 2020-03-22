@@ -1,0 +1,7 @@
+Navgiari Road 1 connects the town of Iemayyin to the capital of the kingdom, Navgiari City.
+It's a gravel path through a meadow of tall purple flowers that serve as the area's east and west boundaries.
+The road is 8 paces wide.
+The road leaves from Iemayyin's south and travels for 60 paces until it reaches Navgiari City's northeast gate.
+20 paces from Iemayyin, there's a pedestrian named SAMANTHA ENTRAMANTRE.
+  When the player gets close, she says, "Did you get drafted, then? I saw the courier holding a draft notice. Well, good luck in your assignment," and walks south offscreen.
+45 paces from Iemayyin, on the west curb of the road, there's a potion.

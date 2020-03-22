@@ -1,0 +1,37 @@
+// This file has weird formating because vim did an oopsie and it was finished in Sublime™
+
+ When starting combat, the combatant with higher fleetness may choose to go first or second.
+ Combatants then alternate turns.
+ On the player's turn, they can choose from the following actions.
+  "[slot one equipped weapon]"
+    This attacks with the weapon that the player has equipped in their first slot
+  "[slot two equipped weapon]"
+     This arracks with the weapon that the player has equipped in their second slot
+  "[slot one equipped magic]"
+      This performs the magic that the player has equipped in their first slot.
+  "[slot two equipped magic]"
+    This performs the magic that the player had equipped in their first slot.
+  "Item"
+    This takes them to their item menu where they can use an item.
+  "Flee"
+    This attempts to flee.
+The player may take one action per turn.
+
+Whether an attack with a weapon hits is calculated with the formula c = ap * r1 / fw where:
+  c is the chance that the attack will hit (values over 1 always hit)
+  ap is the player's accuracy
+  fe is the enemy's fleetness
+  r1 is a random number ranging from 0.95 to 1.05
+
+How much damage an attack with a weapon does is calculated by the formula p = floor(sp * pw * r2 / de) where:
+  p is the damage dealt
+  sp is the player's strength
+  pw is the weapon's power
+  r2 is a random number ranging from 0.85 to 1.15
+
+Each magic works differently but all use the player's magic stat and the enemy's resistance stat.
+
+Whether a player can escape combat is calculated by c = fp / fe - 0.25 where:
+  c is the chance that the player will escape
+  fp is the player's fleetness
+  fe is the enemy's fleetness
