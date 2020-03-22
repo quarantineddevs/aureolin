@@ -7,7 +7,7 @@ public abstract class TimedEvent {
 	Asmura game;
 	
 	// How long, in frames, the event lasts
-	abstract int getLength();
+	public abstract int getLength();
 	
 	// When the thing was started
 	public int startTime;
