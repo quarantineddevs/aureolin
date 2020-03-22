@@ -3,6 +3,8 @@ package rendering;
 import java.awt.Color;
 import java.awt.Graphics;
 
+import java.util.ArrayList;
+
 import javax.swing.JPanel;
 
 public class APanel extends JPanel {
@@ -12,10 +14,14 @@ public class APanel extends JPanel {
 	
 	Color bgColor;
 	
+	// All objects to be rendered onto the screen.
+	ArrayList<Renderable> objects;
+	
 	public APanel() {
 		super();
 		// For menu
 		this.bgColor = Color.BLACK;
+		objects = new ArrayList<>();
 	}
 	
 	// repaint calls this with the appropriate Graphics object.
@@ -24,6 +30,10 @@ public class APanel extends JPanel {
 		// Draw over the entire screen in the background color.
 		g.setColor(bgColor);
 		g.fillRect(0, 0, 800, 600);
+		// Render every Renderable object
+		for (Renderable object : objects) {
+			object.render(g);
+		}
 	}
 
 }
