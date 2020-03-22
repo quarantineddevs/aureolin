@@ -4,7 +4,7 @@ public abstract class Item {
     String name;
     String description;
     
-    abstract int itemID;
+    abstract int getItemID();
 
     abstract void use(PlayerCharacter player);
     abstract void useInBattle(PlayerCharacter player, Opponent enemy);
