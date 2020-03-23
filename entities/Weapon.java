@@ -5,8 +5,6 @@ import java.lang.Math;
 public abstract class Weapon extends Item {
   int attackPower;
   
-  abstract int getItemID();
-  
   void use(PlayerCharacter Player) {
     // Have it say you can't do that (in the window) when used outside of battle.
   }

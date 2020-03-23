@@ -8,6 +8,8 @@ public class PlayerCharacter {
     ArrayList<Item> inventory = new ArrayList<>();
 
     int hp;
+    int mp;
+    int xp;
     int strength;
     int defense;
     int magic;
@@ -15,10 +17,12 @@ public class PlayerCharacter {
     int fleetness;
     int accuracy;
 
-    public PlayerCharacter(String name, boolean gender, int hp, int strength, int defense, int magic, int resistance, int fleetness, int accuracy) {
+    public PlayerCharacter(String name, boolean gender, int hp, int mp, int xp, int strength, int defense, int magic, int resistance, int fleetness, int accuracy) {
         this.name = name;
         this.gender = gender;
         this.hp = hp;
+        this.mp = mp;
+        this.xp = xp;
         this.strength = strength;
         this.defense = defense;
         this.magic = magic;
