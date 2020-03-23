@@ -15,8 +15,6 @@ public class Asmura {
 		time = 0;
 		// Create an AFrame (window for the game)
 		AFrame frame = new AFrame(this);
-		// TEST BLUE SQUARE
-		new TestCenteredSquare(frame.panel);
 		// Repaint it forever
 		while (true) {
 			frame.repaint();
