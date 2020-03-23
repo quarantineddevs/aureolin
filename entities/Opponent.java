@@ -10,4 +10,8 @@ public abstract class Opponent {
   int resistance;
   int fleetness;
   int accuracy;
+  
+  int xpEarned;
+  
+  public String type;
 }
