@@ -6,10 +6,10 @@ public abstract class Magic extends Item {
 	
 	int itemID;
 	
-	int MPCost;
+	int mpCost;
 	
 	boolean mpCheck(PlayerCharacter player) {
-		if(player.mp >= MPCost) {
+		if(player.mp >= mpCost) {
 			return true;
 		} else {
 			return false;

@@ -16,9 +16,7 @@ public class FireAleph extends Magic {
 		if(mpCheck(player)) {			
 	  	  if(enemy.type == "grass" || enemy.type == "ice") {
 		  	enemy.hp -= 3;
-		  } else if(enemy.type == "water") {
-		  	enemy.hp -= 0;
-		  } else {
+		  } else if(enemy.type != "water") {
 		  	enemy.hp -= 1;
 		  }
 	  	  player.mp -= 1;
