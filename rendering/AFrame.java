@@ -27,6 +27,8 @@ public class AFrame extends JFrame implements KeyListener {
 	
 	public Asmura game;
 	
+	private TextRenderer textRenderer;
+	
 	// Constructor (like __init__ in Python, roughly equal to C++)
 	public AFrame(Asmura game) {
 		// Set title to "Return from Asmura"
@@ -44,8 +46,8 @@ public class AFrame extends JFrame implements KeyListener {
 		this.add(this.panel);
 		// For menu stuff
 		this.state = "menu";
-		
 		this.game = game;
+		this.textRenderer = new TextRenderer(this.panel);
 	}
 	
 	@Override
@@ -88,19 +90,29 @@ public class AFrame extends JFrame implements KeyListener {
 			// Enter starts game (changes background to white if in menu)
 			if (this.state == "menu") {
 				// TODO: Add functions for doing these together
-				this.state = "main";
-				this.panel.bgColor = Color.WHITE;
+				this.setStateMain();
 			}
 		} else if (key == KeyEvent.VK_Q) {
 			// q toggles between escaped menu and main game
 			if (this.state == "main") {
-				this.state = "escaped";
-				this.panel.bgColor = Color.GRAY;
+				this.setStateEscaped();
 			} else if (this.state == "escaped") {
-				this.state = "main";
-				this.panel.bgColor = Color.WHITE;
+				this.setStateMain();
 			}
 		}
+	}
+	
+	// Changing screen states
+	public void setStateMain() {
+		this.state = "main";
+		this.panel.bgColor = Color.WHITE;
+		textRenderer.topText = "Main Game";
+	}
+	
+	public void setStateEscaped() {
+		this.state = "escaped";
+		this.panel.bgColor = Color.GRAY;
+		textRenderer.topText = "Escaped Menu";
 	}
 	
 	// Methods we have to implement but don't actually use
