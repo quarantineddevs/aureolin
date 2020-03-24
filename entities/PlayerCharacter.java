@@ -16,8 +16,9 @@ public class PlayerCharacter {
     int resistance;
     int fleetness;
     int accuracy;
+    int money;
 
-    public PlayerCharacter(String name, boolean gender, int hp, int mp, int xp, int strength, int defense, int magic, int resistance, int fleetness, int accuracy) {
+    public PlayerCharacter(String name, boolean gender, int hp, int mp, int xp, int strength, int defense, int magic, int resistance, int fleetness, int accuracy, int money) {
         this.name = name;
         this.gender = gender;
         this.hp = hp;
@@ -29,5 +30,6 @@ public class PlayerCharacter {
         this.resistance = resistance;
         this.fleetness = fleetness;
         this.accuracy = accuracy;
+        this.money = money;
     }
 }
