@@ -8,8 +8,6 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
-import events.LoopingEvent;
-import events.TimedEvent;
 import main.Asmura;
 
 public class AFrame extends JFrame implements KeyListener {
@@ -28,6 +26,9 @@ public class AFrame extends JFrame implements KeyListener {
 	public Asmura game;
 	
 	private TextRenderer textRenderer;
+	
+	// When an error was received.
+	private int errorStartTime;
 	
 	// Constructor (like __init__ in Python, roughly equal to C++)
 	public AFrame(Asmura game) {
@@ -48,29 +49,15 @@ public class AFrame extends JFrame implements KeyListener {
 		this.state = "menu";
 		this.game = game;
 		this.textRenderer = new TextRenderer(this.panel);
+		this.textRenderer.errorText = "";
 	}
 	
 	@Override
 	public void repaint() {
 		this.panel.repaint();
-		// Updating every TimedEvent object
-		for (TimedEvent event : panel.events) {
-			// If the event is starting, start it
-			// If the event's timer has not run out, update it
-			// If the event is done, remove it from the list
-			// UNLESS the event is a LoopingEvent, in which case reset timer
-			if (event.startTime == this.game.time) {
-				event.commence();
-			} else if (event.startTime > this.game.time - event.getLength()) {
-				event.frame(this.game.time - event.startTime);
-			} else {
-				if (event instanceof LoopingEvent) {
-					// For the next loop around
-					event.startTime = this.game.time + 1;
-				} else {
-					panel.events.remove(event);
-				}
-			}
+		// Checking the error status
+		if (this.game.time > errorStartTime + 30) {
+			textRenderer.errorText = "";
 		}
 	}
 	
@@ -99,6 +86,11 @@ public class AFrame extends JFrame implements KeyListener {
 			} else if (this.state == "escaped") {
 				this.setStateMain();
 			}
+		} else if (key == KeyEvent.VK_E) {
+			// TEST: Trigger an error
+			// Error lasts for one second
+			errorStartTime = this.game.time;
+			textRenderer.errorText = "NO PRESSING E";
 		}
 	}
 	

@@ -20,16 +20,23 @@ public class TextRenderer extends Renderable {
 	// What to write at the top
 	public String topText;
 	
+	public String errorText;
+	
 	public void render(Graphics g) {
 		// Write top text
 		// BUT in a blue color (for now)
 		g.setColor(Color.BLUE);
 		Renderable.drawCenteredString(g, topText, titleRect, titleFont);
+		g.setColor(Color.RED);
+		Renderable.drawCenteredString(g, errorText, errorRect, errorFont);
 	}
 	
 	// Static Font and Rectangle members for specific instances
 	
 	public static Font titleFont = new Font("TimesRoman", Font.BOLD, 100);
 	public static Rectangle titleRect = new Rectangle(0, 0, 800, 100);
+	
+	public static Font errorFont = new Font("TimesRoman", Font.ITALIC, 25);
+	public static Rectangle errorRect = new Rectangle(0, 500, 800, 100);
 
 }
