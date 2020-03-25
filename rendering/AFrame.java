@@ -8,6 +8,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
+import animation.ErrorMessageEvent;
 import main.Asmura;
 
 public class AFrame extends JFrame implements KeyListener {
@@ -94,8 +95,7 @@ public class AFrame extends JFrame implements KeyListener {
 				this.setStateMain();
 			}
 		} else if (key == KeyEvent.VK_E) {
-			// TEST: Trigger an error
-			raiseScreenError("NO PRESSING E");
+			new ErrorMessageEvent(this, "NO PRESSING E");
 		}
 	}
 	
