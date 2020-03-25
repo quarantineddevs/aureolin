@@ -1,35 +1,47 @@
 package entities;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
 
-public class PlayerCharacter {
+import rendering.APanel;
+import rendering.Renderable;
+
+public class PlayerCharacter extends Renderable {
   String name;
   boolean gender;  // 1 for m, 0 for f
   ArrayList<Item> inventory = new ArrayList<>();
+  
+  // TODO: Change for global location
+  public int xPos;
+  public int yPos;
+  
+  APanel panel;
 
-  int hp;
-  int mp;
-  int xp;
-  int strength;
-  int defense;
-  int magic;
-  int resistance;
-  int fleetness;
-  int accuracy;
-  int money;
-
-  public PlayerCharacter(String name, boolean gender, int hp, int mp, int xp, int strength, int defense, int magic, int resistance, int fleetness, int accuracy, int money) {
-    this.name = name;
-    this.gender = gender;
-    this.hp = hp;
-    this.mp = mp;
-    this.xp = xp;
-    this.strength = strength;
-    this.defense = defense;
-    this.magic = magic;
-    this.resistance = resistance;
-    this.fleetness = fleetness;
-    this.accuracy = accuracy;
-    this.money = money;
+  public int hp;
+  public int mp;
+  public int xp;
+  public int strength;
+  public int defense;
+  public int magic;
+  public int resistance;
+  public int fleetness;
+  public int accuracy;
+  public int money;
+  
+  public PlayerCharacter(APanel panel) {
+	  super(panel);
+	  this.panel = panel;
+	  
+	  this.xPos = 400;
+	  this.yPos = 400;
   }
+  
+  @Override
+  public void render(Graphics g) {
+	  // TODO: Add texture
+	  g.setColor(Color.ORANGE);
+	  g.fillRect(xPos - 25, yPos - 25, 50, 50);
+  }
+  
 }
