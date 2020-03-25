@@ -68,6 +68,13 @@ public class AFrame extends JFrame implements KeyListener {
 		// TODO: Add cleanup code here if needed
 	}
 	
+	// Error handling (semi-un-hardcoded)
+	public void raiseScreenError(String errorMessage) {
+		// Error lasts for one second
+		errorStartTime = this.game.time;
+		textRenderer.errorText = errorMessage;
+	}
+	
 	// Run whenever a key is pressed
 	public void keyPressed(KeyEvent keyEvent) {
 		int key = keyEvent.getKeyCode();
@@ -88,9 +95,7 @@ public class AFrame extends JFrame implements KeyListener {
 			}
 		} else if (key == KeyEvent.VK_E) {
 			// TEST: Trigger an error
-			// Error lasts for one second
-			errorStartTime = this.game.time;
-			textRenderer.errorText = "NO PRESSING E";
+			raiseScreenError("NO PRESSING E");
 		}
 	}
 	
