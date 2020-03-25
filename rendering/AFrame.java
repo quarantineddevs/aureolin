@@ -8,6 +8,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
+import entities.PlayerCharacter;
 import main.Asmura;
 
 public class AFrame extends JFrame implements KeyListener {
@@ -30,6 +31,8 @@ public class AFrame extends JFrame implements KeyListener {
 	// When an error was received.
 	private int errorStartTime;
 	
+	private PlayerCharacter player;
+	
 	// Constructor (like __init__ in Python, roughly equal to C++)
 	public AFrame(Asmura game) {
 		// Set title to "Return from Asmura"
@@ -50,6 +53,7 @@ public class AFrame extends JFrame implements KeyListener {
 		this.game = game;
 		this.textRenderer = new TextRenderer(this.panel);
 		this.textRenderer.errorText = "";
+		this.player = new PlayerCharacter(this.panel);
 	}
 	
 	@Override
@@ -91,6 +95,14 @@ public class AFrame extends JFrame implements KeyListener {
 			// Error lasts for one second
 			errorStartTime = this.game.time;
 			textRenderer.errorText = "NO PRESSING E";
+		} else if (key == KeyEvent.VK_W) {
+			player.yPos -= 25;
+		} else if (key == KeyEvent.VK_S) {
+			player.yPos += 25;
+		} else if (key == KeyEvent.VK_A) {
+			player.xPos -= 25;
+		} else if (key == KeyEvent.VK_D) {
+			player.xPos += 25;
 		}
 	}
 	
