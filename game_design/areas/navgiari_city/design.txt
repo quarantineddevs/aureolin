@@ -1,0 +1,21 @@
+Navgiari City is the capital of the Kingdom of Navgiari and its largest settlement.
+It is home to the court of General Yilohu and the hub of the army.
+Layout:
+  The city is divided into four main quarters that radiate out from the central FOUNTAIN OF THE FOUNDING, a monument to the original founding of Navgiari.
+  The northeast district contains all the major government installations including the army barracks where the player must report to; Yilohu's palace, ENMEMNI PALACE; and the royal vaults, where the Talisman of Justice is kept.
+  The northwest is the commercial district, containing:
+    A shop selling Potion Alephs and Elixir Alephs.
+    A hotel where the player can recover hp and mp to full for 16g.
+    A magic shop selling Stun Aleph for 20g.
+    Other shops that have conviniently have NPCs blocking the clerk  // gAmEdEsIgN
+    It also contains the gate to the Nakai Woods
+  The southwest is the residential district. Most of the dorrs are locked because that's how normal people work.
+  Scattered throughout are open houses which have:
+    1:
+      MS. MENREEN who says, "I swear I fixed that lock. Oh well, maybe it's not so bad to meet new people."
+      SERENA who says, "I found this on the floor, but dad says sharing is caring," and gives you 3g.
+    2:
+      MR. OWITS who says, "The city's where I've lived my whole life, but sometimes I just want to get away. I wish I was as young as you so I could see the world."
+    3:
+      MRS. CEZAERI: "Oh how brave of you to join the army."
+  The southeast is going to be something, I guess. Anyway so it has the gate to QUENT ROAD.
