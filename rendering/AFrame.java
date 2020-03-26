@@ -9,6 +9,7 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 
 import entities.PlayerCharacter;
+import animation.ErrorMessageEvent;
 import main.Asmura;
 
 public class AFrame extends JFrame implements KeyListener {
@@ -72,6 +73,13 @@ public class AFrame extends JFrame implements KeyListener {
 		// TODO: Add cleanup code here if needed
 	}
 	
+	// Error handling (semi-un-hardcoded)
+	public void raiseScreenError(String errorMessage) {
+		// Error lasts for one second
+		errorStartTime = this.game.time;
+		textRenderer.errorText = errorMessage;
+	}
+	
 	// Run whenever a key is pressed
 	public void keyPressed(KeyEvent keyEvent) {
 		int key = keyEvent.getKeyCode();
@@ -91,10 +99,7 @@ public class AFrame extends JFrame implements KeyListener {
 				this.setStateMain();
 			}
 		} else if (key == KeyEvent.VK_E) {
-			// TEST: Trigger an error
-			// Error lasts for one second
-			errorStartTime = this.game.time;
-			textRenderer.errorText = "NO PRESSING E";
+			new ErrorMessageEvent(this, "NO PRESSING E");
 		} else if (key == KeyEvent.VK_W) {
 			player.yPos -= 25;
 		} else if (key == KeyEvent.VK_S) {

@@ -1,6 +1,13 @@
 package entities;
 
+import animation.ErrorMessageEvent;
+import rendering.AFrame;
+
 public abstract class Consumable extends Item {
+	
+  // Game it's connected to (well actually window, but whatever)
+  AFrame frame;
+	
   String name;
   String description;
 	
@@ -14,7 +21,7 @@ public abstract class Consumable extends Item {
     if(player.money >= this.msrp) {
       player.inventory.add(this);
     } else {
-      // No
+      new ErrorMessageEvent(this.frame, "You don't have enough money to buy " + name + ".");
     }
   }
 }
