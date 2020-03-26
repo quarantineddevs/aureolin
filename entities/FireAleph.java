@@ -1,6 +1,12 @@
 package entities;
 
+import animation.ErrorMessageEvent;
+import rendering.AFrame;
+
 public class FireAleph extends Magic {
+	
+  AFrame frame;
+	
   String name = "Fire א";
   String description = "A basic spell that sets enemies ablaze. Some enemies will be particularly damaged by fire, for example creatures of ice.";
 			
@@ -21,7 +27,7 @@ public class FireAleph extends Magic {
 	  }
 	  player.mp -= 1;
 	} else {
-	  // Have say not enough mp
+	  new ErrorMessageEvent(this.frame, "You don't have enough mp to use this.");
 	}
   }
 }
