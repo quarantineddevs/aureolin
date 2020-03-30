@@ -17,11 +17,15 @@ public abstract class Renderable {
 	// Superclass of all renderable objects in-game.
 	// Also provides some handy static methods for rendering.
 	
+	// Does the object get hidden on escape or menu screens?
+	boolean hideable;
+	
 	APanel panel;
 	
-	public Renderable(APanel panel) {
+	public Renderable(APanel panel, boolean hideable) {
 		this.panel = panel;
 		this.panel.objects.add(this);
+		this.hideable = hideable;
 	}
 	
 	// Must be overridden in subclasses.
