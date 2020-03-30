@@ -100,14 +100,18 @@ public class AFrame extends JFrame implements KeyListener {
 			}
 		} else if (key == KeyEvent.VK_E) {
 			new ErrorMessageEvent(this, "NO PRESSING E");
-		} else if (key == KeyEvent.VK_W) {
-			player.yPos -= 25;
-		} else if (key == KeyEvent.VK_S) {
-			player.yPos += 25;
-		} else if (key == KeyEvent.VK_A) {
-			player.xPos -= 25;
-		} else if (key == KeyEvent.VK_D) {
-			player.xPos += 25;
+		}
+		// Trigger player movement only if the player is visible
+		if (state == "main") {
+			if (key == KeyEvent.VK_W) {
+				player.yPos -= 25;
+			} else if (key == KeyEvent.VK_S) {
+				player.yPos += 25;
+			} else if (key == KeyEvent.VK_A) {
+				player.xPos -= 25;
+			} else if (key == KeyEvent.VK_D) {
+				player.xPos += 25;
+			}
 		}
 	}
 	
