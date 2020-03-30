@@ -23,7 +23,7 @@ public class AFrame extends JFrame implements KeyListener {
 	public APanel panel;
 	
 	// The state of the window
-	private String state;
+	public String state;
 	
 	public Asmura game;
 	
