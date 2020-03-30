@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
-
 public class APanel extends JPanel {
 	
 	// Add this for Java knows what reason
@@ -18,11 +17,14 @@ public class APanel extends JPanel {
 	// All objects to be rendered onto the screen.
 	ArrayList<Renderable> objects;
 	
-	public APanel() {
+	AFrame frame;
+	
+	public APanel(AFrame frame) {
 		super();
 		// For menu
 		this.bgColor = Color.BLACK;
 		objects = new ArrayList<>();
+		this.frame = frame;
 	}
 	
 	// repaint calls this with the appropriate Graphics object.

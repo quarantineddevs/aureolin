@@ -47,7 +47,7 @@ public class AFrame extends JFrame implements KeyListener {
 		// Sizes everything correctly
 		super.pack();		
 		addKeyListener(this);	
-		this.panel = new APanel();
+		this.panel = new APanel(this);
 		this.add(this.panel);
 		// For menu stuff
 		this.state = "menu";
