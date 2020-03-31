@@ -30,7 +30,7 @@ public class PlayerCharacter extends Renderable {
   public int money;
   
   public PlayerCharacter(APanel panel) {
-	  super(panel);
+	  super(panel, true);
 	  this.panel = panel;
 	  
 	  this.xPos = 400;

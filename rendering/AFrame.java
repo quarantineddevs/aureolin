@@ -23,7 +23,7 @@ public class AFrame extends JFrame implements KeyListener {
 	public APanel panel;
 	
 	// The state of the window
-	private String state;
+	public String state;
 	
 	public Asmura game;
 	
@@ -47,7 +47,7 @@ public class AFrame extends JFrame implements KeyListener {
 		// Sizes everything correctly
 		super.pack();		
 		addKeyListener(this);	
-		this.panel = new APanel();
+		this.panel = new APanel(this);
 		this.add(this.panel);
 		// For menu stuff
 		this.state = "menu";
@@ -100,14 +100,18 @@ public class AFrame extends JFrame implements KeyListener {
 			}
 		} else if (key == KeyEvent.VK_E) {
 			new ErrorMessageEvent(this, "NO PRESSING E");
-		} else if (key == KeyEvent.VK_W) {
-			player.yPos -= 25;
-		} else if (key == KeyEvent.VK_S) {
-			player.yPos += 25;
-		} else if (key == KeyEvent.VK_A) {
-			player.xPos -= 25;
-		} else if (key == KeyEvent.VK_D) {
-			player.xPos += 25;
+		}
+		// Trigger player movement only if the player is visible
+		if (state == "main") {
+			if (key == KeyEvent.VK_W) {
+				player.yPos -= 25;
+			} else if (key == KeyEvent.VK_S) {
+				player.yPos += 25;
+			} else if (key == KeyEvent.VK_A) {
+				player.xPos -= 25;
+			} else if (key == KeyEvent.VK_D) {
+				player.xPos += 25;
+			}
 		}
 	}
 	

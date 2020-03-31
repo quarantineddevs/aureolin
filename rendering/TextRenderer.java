@@ -12,7 +12,7 @@ public class TextRenderer extends Renderable {
 	public APanel panel;
 	
 	public TextRenderer(APanel panel) {
-		super(panel);
+		super(panel, false);
 		this.panel = panel;
 		this.topText = "Main Menu";
 	}
