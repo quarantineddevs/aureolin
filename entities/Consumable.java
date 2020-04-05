@@ -17,11 +17,12 @@ public abstract class Consumable extends Item {
   abstract void use(PlayerCharacter player);
   abstract void useInBattle(PlayerCharacter player, Opponent enemy);
     
-  void buy(PlayerCharacter player) {
+  boolean buy(PlayerCharacter player) {
     if(player.money >= this.msrp) {
       player.inventory.add(this);
     } else {
       new ErrorMessageEvent(this.frame, "You don't have enough money to buy " + name + ".");
     }
+    return player.money >= this.msrp;
   }
 }
