@@ -2,6 +2,7 @@ package entities;
 
 public abstract class Opponent {
   public String name;
+  public String description;
   
   int hp;
   int strength;
