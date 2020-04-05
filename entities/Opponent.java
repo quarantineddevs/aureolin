@@ -14,4 +14,7 @@ public abstract class Opponent {
   int xpEarned;
   
   public String type;
+  
+  abstract boolean turnDecider();
+  abstract void ai(PlayerCharacter player);
 }
