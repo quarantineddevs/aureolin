@@ -13,7 +13,7 @@ public abstract class Weapon extends Item {
   int attackPower;
   
   void use(PlayerCharacter Player) {
-	// Have it say you can't do that (in the window) when used outside of battle.
+	new ErrorMessageEvent(this.frame, "You can't use that here.");
   }
 
    void useInBattle(PlayerCharacter player, Opponent enemy) {
