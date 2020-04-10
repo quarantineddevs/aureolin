@@ -1,19 +1,29 @@
-Background:
-  Despite his and his army's best efforts, the evil LORD NAAKAHALAN THE USURPER was defeated at the hands of the heroic GENERAL YILOHU.
-  The general took the evil lord's talisman as a spoil of war and ruled the KINGDOM OF NAVGIARI.
-  As for Naakahalan, the general ordered him thrown into the ASMURA OCEAN; however, he survived because his talisman was no ordinary accessory.
-  Naakahalan's talisman, the later-dubbed TALSISMAN OF JUSTICE, allowed its wearer to breathe under the waves.
-  After having had it so long, the lord could take advantage of that ability even without the artifact's presence.
-  No one in the kingdom suspected the wicked lord's survivial, though, and Yilohu ruled in peace for fifty-seven years after.
-// So I think that this could serve as some cool opening exposition. Like as a title crawl from Star Wars. Except without the he survived part.
+BACKGROUND:
+Despite his and his army’s best efforts, the evil Lord Naakahalan the Usurper was defeated at the hands of the heroic General Yilohu. General Yilohu took the talisman of Lord Naalakahan as his war prize, and for many years he ruled in peace. The people lived under a rule of peace and justice for 57 years, but … the evil lord would not be permanently vanquished so easily; he survived his execution! At the end of the war, it was believed that Naakahalan had been defeated and his corpse thrown
+into the ocean. But he survived, because his magical talisman wore off on him and he gained water-breathing powers!
+THE PLOT:
+The player begins in the small town of IEMAYYIN with starting equipment and a family heirloom.
+The player explores the town, while going about their character's daily routine of going to the library in the hopes that new books have arrived that might help identify the family heirloom.
+No new books have arrived but there are some books that teach the player how to play the game.
+Upon exiting the library, a herald from the general's court hands you a letter:
+"Congratulations, you, [character_name] have been drafted into the royal guard. Report to PRINTI PALACE in NAVGIARI CITY for placement."
+Heading south down NAVGIARI ROAD 1 the player meets SAMANTHA ENTRAMANTRE and arrives in NAVGIARI CITY.
 
-Story of game:
-  The player begins in the small town of IEMAYYIN with starting equipment and a family heirloom.
-  The player explores the town, while going about their character's daily routine of going to the library in the hopes that new books have arrived that might help identify the family heirloom.  // TODO: Figure out a way to communicate this to players.
-  No new books have arrived but there are some books that teach the player how to play the game.
-  Upon exiting the library, a herald from the general's court hands you a letter: "Congratulations, you, [character_name] have been drafted into the royal guard. Report to PRINTI PALACE in NAVGIARI CITY for placement."  // Inciting incident!
-  Heading south down NAVGIARI ROAD 1 /* TODO: Better name */ the player meets SAMANTHA ENTRAMANTRE and arrives in Navgiari City.
-  The player goes to the palace where they are placed into a troop of soldiers, TROOP EIGHT, and tasked with clearing a section of the nearby NAKAI WOODS of monsters so it can be timbered.
-  The player gets tutorialed and taught how to fight in the woods by COMMANDER CITRIUS (who makes an offhand remark about how there's just a little more monsters than usual </foreshadowing>) and fights their portion of the monsters.
-  Upon returning, General Yilohu congratulates troop eight and says that they have one more assignment before their draft period ends: go to the coastal hamlet of QUENT to investigate a mysterious light coming from the Asmura Ocean at night.
-    // this is going to be where the heirloom reacts or something, the commander recognizes it, and the commander informs the player of a book in the royal library that he's seen on the subject.
+The player goes to the palace where they are placed into a troop of soldiers, TROOP EIGHT, and tasked with clearing a section of the nearby NAKAI WOODS of monsters so it can be timbered.
+The player gets tutorialed and taught how to fight in the woods by COMMANDER CITRIUS (who makes an offhand remark about how there's just a little more monsters than usual (perhaps because of the flooding of the nearby ROJIL RIVER) and fights their portion of the monsters.
+Upon returning, GENERAL YILOHU congratulates troop eight and says that they have one more assignment before their draft period ends:
+go to the coastal hamlet of QUENT to investigate a mysterious light coming from the ASMURA OCEAN at night.
+
+Upon returning to the capital, YILOHU congratulates the troop personally this time, and notices that the player’s heirloom is spookily similar to NAAKAHALAN’s talisman and throws the player in prison because of that, confiscating the heirloom sans an explanation as to why to the player was arrested.
+Player has an epic escape scene, before which he was told by a cellmate that the NAKAI WOODS would be the best place to run to.
+The player escapes after recovering the heirloom and a tome concerning said item. Fleeing into the forest, the ROJIL RIVER is no longer flooding, allowing the player passage into the dangerous PADRII SWAMP.
+
+At the other end of the swamp, is the far-flung LWAIN VILLAGE, a village that the authority of the kingdom often doesn’t reach.
+There the player is (maybe, we’ven’t sorted the party members thing out yet) approached by [second_character] who is a historian and noticed the player’s stolen book.
+The player explains the situation and the historian offers to help.
+The player accepts and [historian_character] joins the party.
+[H] is able to discern that the wood that could have made such an artifact could have come from the legendary [tree], which is on the distant island NAAKI,  across the ASMURA OCEAN.
+While QUENT would be closer, the nearest port that would be safe to go to is the PORT OF EMPRUN.
+
+To get there, the player follows NAVGIARI ROAD 2 to the southwest, into the FEIVI DESERT.
+In the middle of the desert, [H] and [P] encounter...
