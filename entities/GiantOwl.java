@@ -27,14 +27,16 @@ public class GiantOwl extends Opponent {
 	}
 	
 	void ai(PlayerCharacter player) {
-		double r1 = (Math.random() * ((1.05 - 0.95) +1)) + 0.95;
+	  if(!stunned()) {
+	    double r1 = (Math.random() * ((1.05 - 0.95) +1)) + 0.95;
 	    double r2 = (Math.random() * ((1.15 - 0.85) + 1)) + 0.85;
-		if(this.accuracy * r1 / player.fleetness >= 1 || (Math.random() * ((1 - 0.1) +1)) + 0.1 > this.accuracy * r1 / player.fleetness) {
+	    if(this.accuracy * r1 / player.fleetness >= 1 || (Math.random() * ((1 - 0.1) +1)) + 0.1 > this.accuracy * r1 / player.fleetness) {
 	      if(Math.floor(this.strength * 3 * r2 / player.defense) >= 0) {
-			player.hp -= Math.floor(this.strength * 3 * r2 / player.defense);
+            player.hp -= Math.floor(this.strength * 3 * r2 / player.defense);
 	      }
 	    } else {
 		  new ErrorMessageEvent(this.frame, "Attack missed!");
         }
+	  }
 	}
 }
