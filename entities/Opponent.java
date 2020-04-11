@@ -4,15 +4,15 @@ public abstract class Opponent {
   public String name;
   public String description;
   
-  int hp;
-  int strength;
-  int defense;
-  int magic;
-  int resistance;
-  int fleetness;
-  int accuracy;
+  public int hp;
+  public int strength;
+  public int defense;
+  public int magic;
+  public int resistance;
+  public int fleetness;
+  public int accuracy;
   
-  int xpEarned;
+  public int xpEarned;
   
   public String type;
   
