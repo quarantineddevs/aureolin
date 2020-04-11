@@ -12,6 +12,7 @@ public class Combat {
   public Combat(PlayerCharacter player, Opponent enemy) {
     this.player = player;
     this.enemy = enemy;
+    player.currentCombat = this;
 
     if(player.fleetness < enemy.fleetness) {
       playerTurnChoice = false;
@@ -29,7 +30,7 @@ public class Combat {
 	
   public void turnRunner(PlayerCharacter player, Opponent enemy, boolean playerFirst, int turnCount) {
     turn = playerFirst;
-    if(!playerFirst) {
+    if(!turn) {
       enemy.ai(player);
     } else {
       /* Ask the player for their selection.
@@ -38,7 +39,7 @@ public class Combat {
       player.inventory.get(0).useInBattle(player, enemy);
     }
     turn = !turn;
-    if(playerFirst) {
+    if(!turn) {
       /* Ask the player for their selection.
          Players will choose from inventory.
          For now assume: */
@@ -46,6 +47,7 @@ public class Combat {
     } else {
       enemy.ai(player);
     }
+    turn = !turn;
     turnCount++;
   }
 }

@@ -15,6 +15,8 @@ public class PlayerCharacter extends Renderable {
   // TODO: Change for global location
   public int xPos;
   public int yPos;
+  
+  Combat currentCombat;
 
   APanel panel;
 
